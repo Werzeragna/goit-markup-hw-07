@@ -207,6 +207,7 @@ body {
 .tlink-icon {
   margin-right: 10px;
   fill: #757575;
+  transition: fill var(--transition-animation);
 }
 
 .mlink:hover .mlink-icon,
@@ -330,6 +331,7 @@ body {
   bottom: 0;
   width: 100%;
   padding: 27px 0;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -530,7 +532,7 @@ body {
   text-transform: uppercase;
   color: var(--brandwhite);
   font-weight: 700;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer-social-links {
   display: flex;
@@ -675,7 +677,7 @@ body {
 .modal-button:focus,
 .modal-button:hover,
 .modal-button:active {
-  border-color: var(--bluebrand-color);
+  fill: var(--bluebrand-color);
 }
 
 .modal-callback-form {
@@ -867,20 +869,21 @@ body {
   gap: 30px;
 }
 
-.project-item {
+.project-link {
+  display: block;
   border-bottom: 1px solid;
   border-color: #eeeeee;
   transition: box-shadow var(--transition-animation);
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-item:hover .project-overlay-text,
-.project-item:focus .project-overlay-text {
+.project-link:hover .project-overlay-text,
+.project-link:focus .project-overlay-text {
   transform: translateY(0%);
 }
 
